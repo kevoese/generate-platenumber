@@ -1,0 +1,31 @@
+{
+  "name": "softalliance-challenge",
+  "version": "1.0.0",
+  "description": "a challenge for vehicle registration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startdev": "nodemon --exec babel-node src/index.js",
+    "migration": "node_modules/.bin/sequelize db:migrate",
+    "migrate:undo": "node_modules/.bin/sequelize db:migrate:undo:all"
+  },
+  "author": "kelvin",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.3",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.19.2",
+    "sequelize-cli": "^5.5.1"
+  }
+}
