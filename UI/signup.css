@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+select, input {
+    outline: none;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -23,11 +27,13 @@ main {
 }
 .navbar {
     padding: 0.4em 2em;
-    margin-top: 1em;
+    padding-top: 1em;
+    margin-bottom: 2em;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .navbar div {
@@ -49,19 +55,17 @@ main {
 .navbar p {
   font-size: 1em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  white-space: nowrap;
 }
 
 .navbar button:hover {
     color: blue;
 }
 
-.navbar p {
-    white-space: nowrap;
-}
-
 .navbar span {
     font-family: cursive;
     font-size: 1.2em;
+    color: rgb(76, 107, 243);
 }
 
 .form-wrap {
@@ -82,6 +86,10 @@ main {
     font-size: 1.2em;
 }
 
+.form-wrap h1 {
+    color: rgb(76, 107, 243);
+}
+
 form {
     width: 400px;
     display: flex;
@@ -97,6 +105,7 @@ input, #location {
     margin: 0.5em auto;
     height: 3em;
     padding: 0 1em;
+    border-radius: 5px;
 }
 
 ::-webkit-input-placeholder {
@@ -121,7 +130,7 @@ input, #location {
 
 .generate {
     display: none;
-    
+    margin-top: 2em;
 }
 
 .generate form {
@@ -228,4 +237,8 @@ input, #location {
 
   select {
     scrollbar-width: auto;
+  }
+
+  select {
+    text-transform: capitalize;
   }
