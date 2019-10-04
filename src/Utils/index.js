@@ -84,6 +84,13 @@ export const authenticate = async (req, res, next) => {
 }
 
 export const LGACODES = {
-    ikeja: 'IKJ',
-    ikorodu: 'IKD',
+    Ikeja: 'IKJ',
+    Ikorodu: 'IKD',
+    Badagry: 'BDG',
+    Apapa: 'APP',
+    Oshodi: 'OSH',
+    Mushin: 'MSH',
+    Epe: 'EPE',
+    Agege: 'AGE',
+    Ojo: 'OJO',
 };
