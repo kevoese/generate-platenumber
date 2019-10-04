@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="">PlatenumberApp</span>
+        <div class="userInfo">
+            <p class="username">
+              
+            </p>
+            <button class="logout" type="submit">
+                Logout
+            </button>
+        </div>
+    </div>
+    <main>
+        <div class="form-wrap">
+            <form id="signup-form">
+                <h1>Sign up</h1>
+                <input type="text" name="firstname" id="" placeholder="Enter your Firstname" required>
+                <input type="text" name="lastname" id="" placeholder="Enter your Lastname" required>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <p class="message"></p>
+                <button type="submit">Sign up</button>
+
+            </form>
+            <form id="login-form">
+                <h1>Sign in</h1>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <p class="message"></p>
+                <button type="submit">Sign in</button>
+
+            </form>
+        </div>
+
+        <div class="generate">
+            <form id="generate-form">
+                <h1>Generate platenumber</h1>
+                <div class="result">
+                    
+                </div>
+                <select name="" id="location" required>
+                    <option value="Choose" selected disabled>
+                        Choose your L.G.A
+                    </option>
+                </select>
+                <input type="text" name="range" placeholder="Enter range to skip e.g 0-765" required>
+                <input type="text" name="count" placeholder="Enter number of codes to generate" required>
+                <button class="generate-btn" type="submit">generate</button>
+                <span class="view-all" type="click">view plate-numbers</span>
+
+            </form>
+        </div>
+
+        <div class="platenumbers-wrap">
+            <h1>Platenumber Records</h1>
+            <div class="view-platenumbers">
+            </div>
+        </div>
+    </main>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="./signup.js"></script>
+</body>
+
+</html>
