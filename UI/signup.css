@@ -106,6 +106,7 @@ input, #location {
     height: 3em;
     padding: 0 1em;
     border-radius: 5px;
+    border: 1px solid #00000038;
 }
 
 ::-webkit-input-placeholder {
